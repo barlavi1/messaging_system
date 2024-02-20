@@ -12,9 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-#import dj_database_url
-#import django_heroku
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -97,11 +96,6 @@ DATABASES = {
     }
 }
 
-#DATABASES = {
-#        'default': dj_database_url.parse(os.environ.get('mysql://barl:Pa$$w0rd@127.0.0.1.jawsdb.com:3306/msg_system_db'), engine='django.db.backends.mysql')
-#}
-# Password validation
-# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -117,10 +111,6 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 
 SIMPLE_JWT = {
@@ -166,5 +156,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-#django_heroku.settings(locals())
+
+
