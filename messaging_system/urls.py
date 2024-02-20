@@ -25,8 +25,6 @@ from messaging_app.views import *
 router = DefaultRouter()
 router.register(r'all_messages', AllMessageViewSet, basename='all_messages')
 router.register(r'unread_messages', UnreadMessageViewSet, basename='unread_messages')
-#router.register(r'read_message', ReadMessageViewSet, basename='read_message')
-#router.register(r'delete_message', DeleteMessageViewSet, basename='delete_message')
 router.register(r'message', MessageViewSet, basename='message')
 
 urlpatterns = [
