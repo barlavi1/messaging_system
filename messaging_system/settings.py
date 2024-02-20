@@ -98,7 +98,7 @@ WSGI_APPLICATION = "messaging_system.wsgi.application"
 #}
 
 DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), engine='django.db.backends.mysql')
+        'default': dj_database_url.parse(os.environ.get('mysql://barl:Pa$$w0rd@127.0.0.1.jawsdb.com:3306/msg_system_db'), engine='django.db.backends.mysql')
 }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
